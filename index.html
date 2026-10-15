@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sale Lead</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Sale Lead">
+<meta name="theme-color" content="#0d7a6b">
+<style>
+  body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#0d7a6b;color:#fff;font-family:system-ui,sans-serif;text-align:center;padding:24px;box-sizing:border-box}
+  img{width:96px;height:96px;border-radius:22px;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+  a{color:#fff;font-weight:600;font-size:1.05rem;border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:12px 22px;text-decoration:none}
+  p{margin:0;opacity:.85;font-size:.9rem;max-width:320px}
+</style>
+</head>
+<body>
+<img src="icon-192.png" alt="">
+<h1 style="margin:0;font-size:1.4rem">Sale Lead</h1>
+<a id="go" href="https://script.google.com/macros/s/AKfycbyO2c2cWuqBmlmo55d-gVvAM7jnHI7jjzrkQd0XGbr88UrDsSsWYQ3IsVWfAW-Qk8NpFw/exec">เปิดหน้าบันทึกลูกค้า</a>
+<p>เพิ่มหน้านี้ลงหน้าจอหลัก: กดเมนู ⋮ ของ Chrome แล้วเลือก "เพิ่มลงในหน้าจอหลัก" (iPhone: ปุ่มแชร์ แล้ว "เพิ่มไปยังหน้าจอโฮม")</p>
+<script>
+  // เปิดจากไอคอนบนหน้าจอ (โหมดแอป) ให้ไปหน้าบันทึกทันที
+  if (matchMedia('(display-mode: standalone)').matches || navigator.standalone) location.replace(document.getElementById('go').href);
+</script>
+</body>
+</html>
